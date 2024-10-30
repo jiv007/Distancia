@@ -1,6 +1,7 @@
-package net.jiv007.farcraft;
+package net.jiv007.distancia;
 
 import com.mojang.logging.LogUtils;
+import net.jiv007.distancia.item.ModItems;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -13,14 +14,16 @@ import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import org.slf4j.Logger;
 
 // The value here should match an entry in the META-INF/mods.toml file
-@Mod(Farcraft.MOD_ID)
-public class Farcraft {
-    public static final String MOD_ID = "farcraft";
+@Mod(net.jiv007.distancia.distancia.MOD_ID)
+public class distancia {
+    public static final String MOD_ID = "distancia";
     private static final Logger LOGGER = LogUtils.getLogger();
 
-    public Farcraft(FMLJavaModLoadingContext context)
+    public distancia(FMLJavaModLoadingContext context)
     {
         IEventBus modEventBus = context.getModEventBus();
+
+        ModItems.register(modEventBus);
 
         modEventBus.addListener(this::commonSetup);
 

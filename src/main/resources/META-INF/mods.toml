@@ -5,9 +5,9 @@ loaderVersion="43.4.4"
 license="MIT"
 
 [[mods]]
-modId="farcraft"
+modId="distancia"
 version="0.0.1-1.19.2"
-displayName="Farcraft: The Mod"
+displayName="Distancia"
 authors="jiv007"
-description="A progression and flavoring mod for the Farcraft SMP."
+description="A custom built progression and flavoring mod for the  SMP."
 

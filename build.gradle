@@ -6,10 +6,10 @@ plugins {
 }
 
 version = '0.0.1-1.19.2'
-group = 'net.jiv007.farcraft'
+group = 'net.jiv007.distancia'
 
 base {
-    archivesName = 'farcraft'
+    archivesName = 'distancia'
 }
 
 // Mojang ships Java 17 to end users in 1.18+, so your mod should target Java 17.
@@ -75,10 +75,10 @@ minecraft {
             property 'forge.logging.console.level', 'debug'
 
             // Comma-separated list of namespaces to load gametests from. Empty = all namespaces.
-            property 'forge.enabledGameTestNamespaces', 'farcraft'
+            property 'forge.enabledGameTestNamespaces', 'distancia'
 
             mods {
-                "${'farcraft'}" {
+                "${'distancia'}" {
                     source sourceSets.main
                 }
             }
@@ -86,11 +86,11 @@ minecraft {
 
         client {
             // Comma-separated list of namespaces to load gametests from. Empty = all namespaces.
-            property 'forge.enabledGameTestNamespaces', 'farcraft'
+            property 'forge.enabledGameTestNamespaces', 'distancia'
         }
 
         server {
-            property 'forge.enabledGameTestNamespaces', 'farcraft'
+            property 'forge.enabledGameTestNamespaces', 'distancia'
             args '--nogui'
         }
 
@@ -98,7 +98,7 @@ minecraft {
         // By default, the server will crash when no gametests are provided.
         // The gametest system is also enabled by default for other run configs under the /test command.
         gameTestServer {
-            property 'forge.enabledGameTestNamespaces', 'farcraft'
+            property 'forge.enabledGameTestNamespaces', 'distancia'
         }
 
         data {
@@ -106,7 +106,7 @@ minecraft {
             workingDirectory project.file('run-data')
 
             // Specify the modid for data generation, where to output the resulting resource, and where to look for existing resources.
-            args '--mod', 'farcraft', '--all', '--output', file('src/generated/resources/'), '--existing', file('src/main/resources/')
+            args '--mod', 'distancia', '--all', '--output', file('src/generated/resources/'), '--existing', file('src/main/resources/')
         }
     }
 }
@@ -151,7 +151,7 @@ dependencies {
 // A missing property will result in an error. Properties are expanded using ${} Groovy notation.
 // When "copyIdeResources" is enabled, this will also run before the game launches in IDE environments.
 // See https://docs.gradle.org/current/dsl/org.gradle.language.jvm.tasks.ProcessResources.html
-def mod_id = 'farcraft'
+def mod_id = 'distancia'
 
 tasks.named('processResources', ProcessResources).configure {
     var replaceProperties = [
@@ -160,13 +160,13 @@ tasks.named('processResources', ProcessResources).configure {
             forge_version: forge_version,
             forge_version_range: forge_version_range,
             loader_version_range: loader_version_range,
-            farcraft: 'farcraft', // or directly 'farcraft' if preferred
+            distancia: 'distancia', // or directly 'distancia' if preferred
             mod_name: mod_name,
             mod_license: mod_license,
             mod_version: mod_version,
             mod_authors: mod_authors,
             mod_description: mod_description,
-            mod_id: 'farcraft'  // Add mod_id here
+            mod_id: 'distancia'  // Add mod_id here
     ]
     inputs.properties replaceProperties
 
@@ -179,7 +179,7 @@ tasks.named('processResources', ProcessResources).configure {
 tasks.named('jar', Jar).configure {
     manifest {
         attributes([
-                'Specification-Title'     : 'farcraft',
+                'Specification-Title'     : 'distancia',
                 'Specification-Vendor'    : mod_authors,
                 'Specification-Version'   : '1', // We are version 1 of ourselves
                 'Implementation-Title'    : project.name,
