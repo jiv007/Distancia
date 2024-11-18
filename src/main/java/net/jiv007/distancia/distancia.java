@@ -1,6 +1,7 @@
 package net.jiv007.distancia;
 
 import com.mojang.logging.LogUtils;
+import net.jiv007.distancia.block.ModBlocks;
 import net.jiv007.distancia.item.ModItems;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
@@ -24,6 +25,7 @@ public class distancia {
         IEventBus modEventBus = context.getModEventBus();
 
         ModItems.register(modEventBus);
+        ModBlocks.register(modEventBus);
 
         modEventBus.addListener(this::commonSetup);
 
