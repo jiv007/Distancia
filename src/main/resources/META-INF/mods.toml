@@ -1,0 +1,13 @@
+modLoader="javafml"
+
+loaderVersion="43.4.4"
+
+license="MIT"
+
+[[mods]]
+modId="distancia"
+version="0.0.2-1.19.2"
+displayName="Distancia"
+authors="jiv007"
+description="A custom built progression and flavoring mod for the  SMP."
+
