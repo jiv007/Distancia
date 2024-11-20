@@ -18,16 +18,15 @@ import java.util.function.Supplier;
 
 public class ModBlocks {
     public static final DeferredRegister<Block> BLOCKS =
-            DeferredRegister.create(ForgeRegistries. BLOCKS, distancia.MOD_ID);
+            DeferredRegister.create(ForgeRegistries.BLOCKS, distancia.MOD_ID);
 
     public static final RegistryObject<Block> FARSTEEL_BULKHEAD = registerBlock("farsteel_bulkhead",
-            () -> new Block(BlockBehaviour.Properties
-                    .of(Material.METAL) // Metal Material
-                    .strength(240.0f, 2400.0f) // break time of two minutes regardless of tool
-                    .lightLevel(state -> 3) // gives off a low light.
-            ),
-            ModCreativeModeTab.DISTANCIA_TAB
-    );
+            () -> new Block(BlockBehaviour.Properties.of(Material.HEAVY_METAL)
+                    .lightLevel(state -> 3)
+                    .strength(160f, 1200f)
+                    .requiresCorrectToolForDrops()),
+            ModCreativeModeTab.DISTANCIA_TAB);
+
 
 
     private static <T extends Block>RegistryObject<T> registerBlock(String name, Supplier<T> block, CreativeModeTab tab) {
@@ -45,4 +44,7 @@ public class ModBlocks {
     public static void register(IEventBus eventBus) {
         BLOCKS.register(eventBus);
     }
+
+
+
 }
