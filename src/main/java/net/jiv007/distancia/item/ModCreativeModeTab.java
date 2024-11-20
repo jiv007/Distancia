@@ -1,5 +1,7 @@
 package net.jiv007.distancia.item;
 
+import net.jiv007.distancia.block.ModBlocks;
+import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.ItemStack;
 
