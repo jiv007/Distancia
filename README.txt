@@ -4,6 +4,7 @@ A progression and flavoring mod for the as yet unnamed SMP
 
 FEATURES:
 Ruined Farsteel Item - Does nothing.
+Farsteel Bulkhead - Does nothing.
 
 CHANGELOG
 
@@ -16,3 +17,7 @@ Ver 0.0.2-1.19.2 - 10/30/2024
 - Refactored mod id
 - Added 'Ruined Farsteel'
 - Added the creative mode tab for the mod
+
+Ver 0.0.3-1.19.2 - 11/19/2024
+- Added 'Farsteel Bulkhead'
+- Current known issue: texture is failing to load for 'Farsteel Bulkhead'
