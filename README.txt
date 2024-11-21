@@ -6,6 +6,7 @@ A progression and flavoring mod for the Distancia SMP
 
 - Ruined Farsteel Item - Does nothing
 - Farsteel Bulkhead - Drops 3-9 'Ruined Farsteel'
+- Farclay Block - Does nothing
 
 ---PLANNED FEATURES---
 
@@ -51,7 +52,16 @@ A progression and flavoring mod for the Distancia SMP
  Changes:
  - Added loot table for 'Farsteel Bulkhead'
  Known Issues:
- -None
+ - None
  Bug Fixes:
  - Fixed texture for 'Farsteel Bulkhead'
+[END]
+
+[Ver 0.0.5-1.19.2 - 11/20/2024]
+ Changes:
+ - Added block 'Block of Farclay'
+ Known Issues:
+ - None
+ Bug Fixes:
+ - None
 [END]

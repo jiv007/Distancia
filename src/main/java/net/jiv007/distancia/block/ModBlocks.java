@@ -7,6 +7,7 @@ import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.material.Material;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -27,6 +28,12 @@ public class ModBlocks {
                     .requiresCorrectToolForDrops()),
             ModCreativeModeTab.DISTANCIA_TAB);
 
+    public static final RegistryObject<Block> FARCLAY_BLOCK = registerBlock("farclay_block",
+            () -> new Block(BlockBehaviour.Properties.of(Material.CLAY)
+                    .strength(1f, 1f)
+                    .sound(SoundType.GRAVEL)
+                    .requiresCorrectToolForDrops()),
+            ModCreativeModeTab.DISTANCIA_TAB);
 
 
     private static <T extends Block>RegistryObject<T> registerBlock(String name, Supplier<T> block, CreativeModeTab tab) {
