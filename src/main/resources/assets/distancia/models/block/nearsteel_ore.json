@@ -2,19 +2,19 @@
   "credit": "Made by jiv007",
   "texture_size": [64, 64],
   "textures": {
-    "1": "distancia:block/farclay_block",
-    "particle": "distancia:block/farclay_block"
+    "1": "distancia:block/nearsteel_ore",
+    "particle": "distancia:block/nearsteel_ore"
   },
   "elements": [
     {
       "from": [0, 0, 0],
       "to": [16, 16, 16],
       "faces": {
-        "north": {"uv": [4, 4, 8, 8], "texture": "#1"},
+        "north": {"uv": [0, 0, 4, 4], "texture": "#1"},
         "east": {"uv": [0, 4, 4, 8], "texture": "#1"},
-        "south": {"uv": [12, 4, 16, 8], "texture": "#1"},
-        "west": {"uv": [8, 4, 12, 8], "texture": "#1"},
-        "up": {"uv": [8, 4, 4, 0], "texture": "#1"},
+        "south": {"uv": [4, 0, 8, 4], "texture": "#1"},
+        "west": {"uv": [4, 4, 8, 8], "texture": "#1"},
+        "up": {"uv": [4, 12, 0, 8], "texture": "#1"},
         "down": {"uv": [12, 0, 8, 4], "texture": "#1"}
       }
     }
@@ -33,14 +33,15 @@
       "scale": [0.25, 0.25, 0.25]
     },
     "ground": {
+      "translation": [0, 1, 0],
       "scale": [0.25, 0.25, 0.25]
     },
     "gui": {
-      "rotation": [27, 47, 0],
+      "rotation": [25, -45, 0],
       "scale": [0.65, 0.65, 0.65]
     },
     "fixed": {
-      "scale": [0.75, 0.75, 0.75]
+      "scale": [0.5, 0.5, 0.5]
     }
   }
 }

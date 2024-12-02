@@ -9,7 +9,7 @@ public class ModCreativeModeTab {
     public static final CreativeModeTab DISTANCIA_TAB = new CreativeModeTab("distanciatab") {
         @Override
         public ItemStack makeIcon() {
-            return new ItemStack(ModItems.RUINED_FARSTEEL.get());
+            return new ItemStack(ModBlocks.FARSTEEL_BULKHEAD.get());
         }
     };
 }
