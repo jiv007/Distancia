@@ -17,6 +17,10 @@ public class ModItems {
     public static final RegistryObject<Item> FARCLAY_BALL = ITEMS.register("farclay_ball",
             () -> new Item(new Item.Properties().tab(ModCreativeModeTab.DISTANCIA_TAB)));
 
+    public static final RegistryObject<Item> RAW_NEARSTEEL = ITEMS.register("raw_nearsteel",
+            () -> new Item(new Item.Properties().tab(ModCreativeModeTab.DISTANCIA_TAB)));
+
+
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
     }

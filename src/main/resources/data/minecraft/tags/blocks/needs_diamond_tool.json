@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
-    "distancia:farsteel_bulkhead"
+    "distancia:farsteel_bulkhead",
+    "distancia:nearsteel_ore"
   ]
 }

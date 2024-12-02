@@ -5,10 +5,11 @@ A progression and flavoring mod for the Distancia SMP
 ---FEATURES---
 
 - Ruined Farsteel Item - Does nothing
-- Farsteel Bulkhead - Drops 3-9 'Ruined Farsteel'
+- Farsteel Bulkhead - Drops 3-9 'Ruined Farsteel' when mined with diamond pickaxe or above
 - Farclay Block - Drops 4 'Farclay Ball' when mined with a shovel
 - Farclay Ball - Can be crafted into 'Farclay Block,' does nothing
-- Nearsteel Ore - Does nothing
+- Nearsteel Ore - Drops 1 'Raw Nearsteel' when mined with diamond pickaxe or above
+- Raw Nearsteel - Does nothing
 
 ---PLANNED FEATURES---
 
@@ -86,4 +87,14 @@ A progression and flavoring mod for the Distancia SMP
  - None
  Bug Fixes
  - Adjusted GUI appearance of all mod blocks
+[END]
+
+[Ver 0.0.8-1.19.2 - 12/2/2024]
+ Changes:
+ - Added 'Raw Nearsteel'
+ - Added loot table for 'Nearsteel Ore' now drops 1 'Raw Nearsteel,' requires diamond pickaxe or above
+ Known Issues:
+ - None
+ Bug Fixes
+ - Adjusted GUI lighting of all mod elements
 [END]
