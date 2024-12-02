@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "XX",
+    "XX"
+  ],
+  "key": {
+    "X": {
+      "item": "distancia:farclay_ball"
+    }
+  },
+  "result": {
+    "item": "distancia:farclay_block",
+    "count": 1
+  }
+}

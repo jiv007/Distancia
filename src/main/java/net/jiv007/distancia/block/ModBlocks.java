@@ -30,7 +30,7 @@ public class ModBlocks {
 
     public static final RegistryObject<Block> FARCLAY_BLOCK = registerBlock("farclay_block",
             () -> new Block(BlockBehaviour.Properties.of(Material.CLAY)
-                    .strength(1f, 1f)
+                    .strength(0.6f, 0.6f)
                     .sound(SoundType.GRAVEL)
                     .requiresCorrectToolForDrops()),
             ModCreativeModeTab.DISTANCIA_TAB);

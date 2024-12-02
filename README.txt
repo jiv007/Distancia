@@ -65,3 +65,14 @@ A progression and flavoring mod for the Distancia SMP
  Bug Fixes:
  - None
 [END]
+
+[Ver 0.0.6-1.19.2 - 12/1/2024]
+ Changes:
+ - Added 'Farclay Ball' item
+ - Added loot table for 'Block of Farclay' now drops 4 'Farclay Ball' when mined with a shovel
+ - Added shaped crafting recipe for 'Block of Farclay' using 4 farclay balls in a 2 x 2 grid
+ Known Issues:
+ - None
+ Bug Fixes:
+ - None
+[END]
