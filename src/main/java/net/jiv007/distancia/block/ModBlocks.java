@@ -42,6 +42,13 @@ public class ModBlocks {
                     .requiresCorrectToolForDrops()),
             ModCreativeModeTab.DISTANCIA_TAB);
 
+    public static final RegistryObject<Block> DEEPSLATE_NEARSTEEL_ORE = registerBlock("deepslate_nearsteel_ore",
+            () -> new Block(BlockBehaviour.Properties.of(Material.STONE)
+                    .strength(3.0f, 3.0f)
+                    .sound(SoundType.DEEPSLATE)
+                    .requiresCorrectToolForDrops()),
+            ModCreativeModeTab.DISTANCIA_TAB);
+
 
     private static <T extends Block>RegistryObject<T> registerBlock(String name, Supplier<T> block, CreativeModeTab tab) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);
